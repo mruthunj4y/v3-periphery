@@ -1,0 +1,5726 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/BlockTimestamp.sol": {
+      "lastModificationDate": 1750146793152,
+      "contentHash": "9558ed78048252f933fde4b5320eb84c",
+      "sourceName": "contracts/base/BlockTimestamp.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "BlockTimestamp"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/PeripheryValidation.sol": {
+      "lastModificationDate": 1750146793155,
+      "contentHash": "5882d6561b225c611dbecbbe4b60b21f",
+      "sourceName": "contracts/base/PeripheryValidation.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BlockTimestamp.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PeripheryValidation"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/SwapRouter.sol": {
+      "lastModificationDate": 1750147576724,
+      "contentHash": "2d9e8673db71bc5406caa58304f4006c",
+      "sourceName": "contracts/SwapRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/libraries/SafeCast.sol",
+        "@surge/surge-core/contracts/libraries/TickMath.sol",
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "./interfaces/ISwapRouter.sol",
+        "./base/PeripheryImmutableState.sol",
+        "./base/PeripheryValidation.sol",
+        "./base/PeripheryPaymentsWithFee.sol",
+        "./base/Multicall.sol",
+        "./base/SelfPermit.sol",
+        "./libraries/Path.sol",
+        "./libraries/PoolAddress.sol",
+        "./libraries/CallbackValidation.sol",
+        "./interfaces/external/IWETH9.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SwapRouter"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/SafeCast.sol": {
+      "lastModificationDate": 1750147214147,
+      "contentHash": "c89128b97d009587db99cae7763cfef0",
+      "sourceName": "@surge/surge-core/contracts/libraries/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/TickMath.sol": {
+      "lastModificationDate": 1750147214152,
+      "contentHash": "6bd9ce5056f36b9763627bce69998c83",
+      "sourceName": "@surge/surge-core/contracts/libraries/TickMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "TickMath"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/IPool.sol": {
+      "lastModificationDate": 1750147214143,
+      "contentHash": "bc57318b591afeb5bd7ff62f53fe54db",
+      "sourceName": "@surge/surge-core/contracts/interfaces/IPool.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./pool/IPoolImmutables.sol",
+        "./pool/IPoolState.sol",
+        "./pool/IPoolDerivedState.sol",
+        "./pool/IPoolActions.sol",
+        "./pool/IPoolOwnerActions.sol",
+        "./pool/IPoolEvents.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPool"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/proxy/Initializable.sol": {
+      "lastModificationDate": 1750147211675,
+      "contentHash": "71b3ac8d4da61bb6c6708c12f56e3c1f",
+      "sourceName": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/AddressUpgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.24 <0.8.0"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/ISwapRouter.sol": {
+      "lastModificationDate": 1750147576725,
+      "contentHash": "f1831a3de8442f6b475f90ef9d96f37c",
+      "sourceName": "contracts/interfaces/ISwapRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/callback/ISwapCallback.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "ISwapRouter"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/PeripheryImmutableState.sol": {
+      "lastModificationDate": 1750146793154,
+      "contentHash": "726dfbb3bd6325a30e9fd8c129c1a15e",
+      "sourceName": "contracts/base/PeripheryImmutableState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPeripheryImmutableState.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PeripheryImmutableState"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/PeripheryPaymentsWithFee.sol": {
+      "lastModificationDate": 1750147576735,
+      "contentHash": "8ba05fcb1d53d52b59d3231b2e74d38a",
+      "sourceName": "contracts/base/PeripheryPaymentsWithFee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@surge/surge-core/contracts/libraries/LowGasSafeMath.sol",
+        "./PeripheryPayments.sol",
+        "../interfaces/IPeripheryPaymentsWithFee.sol",
+        "../interfaces/external/IWETH9.sol",
+        "../libraries/TransferHelper.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "PeripheryPaymentsWithFee"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/Multicall.sol": {
+      "lastModificationDate": 1750146793153,
+      "contentHash": "97e35fe1126f33cbfe6e70ba30f14fb8",
+      "sourceName": "contracts/base/Multicall.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IMulticall.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/SelfPermit.sol": {
+      "lastModificationDate": 1750146793155,
+      "contentHash": "f5a28c4a86996c97e107f97a57419728",
+      "sourceName": "contracts/base/SelfPermit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/drafts/IERC20Permit.sol",
+        "../interfaces/ISelfPermit.sol",
+        "../interfaces/external/IERC20PermitAllowed.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SelfPermit"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/Path.sol": {
+      "lastModificationDate": 1750146793166,
+      "contentHash": "8c77deefa62a7600476db7122c811951",
+      "sourceName": "contracts/libraries/Path.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BytesLib.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "Path"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/PoolAddress.sol": {
+      "lastModificationDate": 1750147576776,
+      "contentHash": "661beabb602d51bd6af3c15e0b94db57",
+      "sourceName": "contracts/libraries/PoolAddress.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IFactory.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PoolAddress"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/CallbackValidation.sol": {
+      "lastModificationDate": 1750147576735,
+      "contentHash": "7dcce0b69b3f73ac989b83dd6306c947",
+      "sourceName": "contracts/libraries/CallbackValidation.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "./PoolAddress.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "CallbackValidation"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/external/IWETH9.sol": {
+      "lastModificationDate": 1750146793161,
+      "contentHash": "b2db1bd28998866868200957d0d964c5",
+      "sourceName": "contracts/interfaces/external/IWETH9.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "IWETH9"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/pool/IPoolImmutables.sol": {
+      "lastModificationDate": 1750147215476,
+      "contentHash": "0f3b4985a2f6395249536731b63a652e",
+      "sourceName": "@surge/surge-core/contracts/interfaces/pool/IPoolImmutables.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPoolImmutables"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/pool/IPoolState.sol": {
+      "lastModificationDate": 1750147215476,
+      "contentHash": "a10739f70907528ec68cd6fbe2b3e286",
+      "sourceName": "@surge/surge-core/contracts/interfaces/pool/IPoolState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPoolState"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/pool/IPoolDerivedState.sol": {
+      "lastModificationDate": 1750147215476,
+      "contentHash": "5bc403d11c78587c19d13379ceacece8",
+      "sourceName": "@surge/surge-core/contracts/interfaces/pool/IPoolDerivedState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPoolDerivedState"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/pool/IPoolActions.sol": {
+      "lastModificationDate": 1750147215476,
+      "contentHash": "cd66a3b898c23f4fdd28c7acd2058752",
+      "sourceName": "@surge/surge-core/contracts/interfaces/pool/IPoolActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPoolActions"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/pool/IPoolOwnerActions.sol": {
+      "lastModificationDate": 1750147215476,
+      "contentHash": "403ab6898b5b98353f3e86beb151c0ac",
+      "sourceName": "@surge/surge-core/contracts/interfaces/pool/IPoolOwnerActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPoolOwnerActions"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/pool/IPoolEvents.sol": {
+      "lastModificationDate": 1750147215476,
+      "contentHash": "556e683b0b9567607d2c0b40c99c81db",
+      "sourceName": "@surge/surge-core/contracts/interfaces/pool/IPoolEvents.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPoolEvents"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+      "lastModificationDate": 1750147211691,
+      "contentHash": "8cbd29f49ba6d9b54875fbeada98edc4",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "AddressUpgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/callback/ISwapCallback.sol": {
+      "lastModificationDate": 1750147215476,
+      "contentHash": "592efeac26480bc110b571a615576977",
+      "sourceName": "@surge/surge-core/contracts/interfaces/callback/ISwapCallback.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "ISwapCallback"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IPeripheryImmutableState.sol": {
+      "lastModificationDate": 1750146793158,
+      "contentHash": "d7698ff2bd2239dfdeeb8461f7e89e89",
+      "sourceName": "contracts/interfaces/IPeripheryImmutableState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPeripheryImmutableState"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1750147214212,
+      "contentHash": "70ec621ea910798b6c590a0b402a5bb9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/LowGasSafeMath.sol": {
+      "lastModificationDate": 1750147214145,
+      "contentHash": "ff4d506a22d90b314ab325b437ff7729",
+      "sourceName": "@surge/surge-core/contracts/libraries/LowGasSafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "LowGasSafeMath"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/PeripheryPayments.sol": {
+      "lastModificationDate": 1750146793154,
+      "contentHash": "0b56335ed00b2716be433b2c78d9fc1f",
+      "sourceName": "contracts/base/PeripheryPayments.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../interfaces/IPeripheryPayments.sol",
+        "../interfaces/external/IWETH9.sol",
+        "../libraries/TransferHelper.sol",
+        "./PeripheryImmutableState.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "PeripheryPayments"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IPeripheryPaymentsWithFee.sol": {
+      "lastModificationDate": 1750146793158,
+      "contentHash": "cf3d11802bba945da909fcfe2faff853",
+      "sourceName": "contracts/interfaces/IPeripheryPaymentsWithFee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IPeripheryPayments.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPeripheryPaymentsWithFee"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1750146793167,
+      "contentHash": "f0616d1842da6584f8454c9b323d777f",
+      "sourceName": "contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IPeripheryPayments.sol": {
+      "lastModificationDate": 1750146793158,
+      "contentHash": "8aa07bcaad7779d2bae8089adef235bf",
+      "sourceName": "contracts/interfaces/IPeripheryPayments.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPeripheryPayments"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IMulticall.sol": {
+      "lastModificationDate": 1750146793157,
+      "contentHash": "a2e56a9714654fdbdf3a7bd35ad4ebd1",
+      "sourceName": "contracts/interfaces/IMulticall.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IMulticall"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/drafts/IERC20Permit.sol": {
+      "lastModificationDate": 1750147211724,
+      "contentHash": "554ef6825dd2112860a7f82be25dab45",
+      "sourceName": "@openzeppelin/contracts/drafts/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/ISelfPermit.sol": {
+      "lastModificationDate": 1750146793160,
+      "contentHash": "bb6ee7140c27d283bf7c5f5780c8fcd9",
+      "sourceName": "contracts/interfaces/ISelfPermit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "ISelfPermit"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/external/IERC20PermitAllowed.sol": {
+      "lastModificationDate": 1750146793161,
+      "contentHash": "3cad3f665d74d11ab6a79c298d6f27fa",
+      "sourceName": "contracts/interfaces/external/IERC20PermitAllowed.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20PermitAllowed"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/BytesLib.sol": {
+      "lastModificationDate": 1750146793163,
+      "contentHash": "d8d928d03b62efad7c9e282c57a46dc6",
+      "sourceName": "contracts/libraries/BytesLib.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "BytesLib"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/IFactory.sol": {
+      "lastModificationDate": 1750147214143,
+      "contentHash": "bdb051b989dc611432207616a9f4cef2",
+      "sourceName": "@surge/surge-core/contracts/interfaces/IFactory.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IFactory"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/MockTimeSwapRouter.sol": {
+      "lastModificationDate": 1750146793169,
+      "contentHash": "fa63dcb1c4a057647008920bc3a26e48",
+      "sourceName": "contracts/test/MockTimeSwapRouter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../SwapRouter.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MockTimeSwapRouter"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/Migrator.sol": {
+      "lastModificationDate": 1750147576725,
+      "contentHash": "50f39f84731d848cdec1531dffb71a42",
+      "sourceName": "contracts/Migrator.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/libraries/LowGasSafeMath.sol",
+        "./interfaces/IPair.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "./interfaces/INonfungiblePositionManager.sol",
+        "./libraries/TransferHelper.sol",
+        "./interfaces/IMigrator.sol",
+        "./base/PeripheryImmutableState.sol",
+        "./base/Multicall.sol",
+        "./base/SelfPermit.sol",
+        "./interfaces/external/IWETH9.sol",
+        "./base/PoolInitializer.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "Migrator"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IPair.sol": {
+      "lastModificationDate": 1750146793158,
+      "contentHash": "302d5940774d55cc9627bf5598dd90a0",
+      "sourceName": "contracts/interfaces/IPair.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPair"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol": {
+      "lastModificationDate": 1750146793157,
+      "contentHash": "2b36c07337188aa1cbaec349814a1734",
+      "sourceName": "contracts/interfaces/INonfungiblePositionManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721MetadataUpgradeable.sol",
+        "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721EnumerableUpgradeable.sol",
+        "./IPoolInitializer.sol",
+        "./IERC721Permit.sol",
+        "./IPeripheryPayments.sol",
+        "./IPeripheryImmutableState.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "INonfungiblePositionManager"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IMigrator.sol": {
+      "lastModificationDate": 1750146793156,
+      "contentHash": "fc31d42a9d6b77961775dff63a9ad3c2",
+      "sourceName": "contracts/interfaces/IMigrator.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IMulticall.sol",
+        "./ISelfPermit.sol",
+        "./IPoolInitializer.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IMigrator"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/PoolInitializer.sol": {
+      "lastModificationDate": 1750147576735,
+      "contentHash": "d80564411a45e246544f0e68ad481ed3",
+      "sourceName": "contracts/base/PoolInitializer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IFactory.sol",
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "./PeripheryImmutableState.sol",
+        "../interfaces/IPoolInitializer.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PoolInitializer"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721MetadataUpgradeable.sol": {
+      "lastModificationDate": 1750147214166,
+      "contentHash": "7fd49933a0e839e550e00576d5f6b8bb",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721MetadataUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721MetadataUpgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721EnumerableUpgradeable.sol": {
+      "lastModificationDate": 1750147214166,
+      "contentHash": "bdb574c1b2a7e15ff82a23856e9aef95",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721EnumerableUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721EnumerableUpgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IPoolInitializer.sol": {
+      "lastModificationDate": 1750146793158,
+      "contentHash": "a030e527c3145fc3b1c40878821cf569",
+      "sourceName": "contracts/interfaces/IPoolInitializer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPoolInitializer"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IERC721Permit.sol": {
+      "lastModificationDate": 1750146793156,
+      "contentHash": "de558ab661676bb722b3bc995705e674",
+      "sourceName": "contracts/interfaces/IERC721Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IERC721Permit"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol": {
+      "lastModificationDate": 1750147214166,
+      "contentHash": "33aaad690cb26cc3b16bdd67ed6ebadc",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165Upgradeable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721Upgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol": {
+      "lastModificationDate": 1750147211676,
+      "contentHash": "0cec694e6d710207b357681877e666ad",
+      "sourceName": "@openzeppelin/contracts-upgradeable/introspection/IERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC165Upgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/SelfPermitTest.sol": {
+      "lastModificationDate": 1750146793171,
+      "contentHash": "c7e26ec85f8823a341673aba9c127b7a",
+      "sourceName": "contracts/test/SelfPermitTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../base/SelfPermit.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SelfPermitTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/TestERC20PermitAllowed.sol": {
+      "lastModificationDate": 1750146793172,
+      "contentHash": "923b796dbdc448aa267ed1b9c9d60d2b",
+      "sourceName": "contracts/test/TestERC20PermitAllowed.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TestERC20.sol",
+        "../interfaces/external/IERC20PermitAllowed.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestERC20PermitAllowed"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/TestERC20.sol": {
+      "lastModificationDate": 1750146793172,
+      "contentHash": "d6b981f196bdbd2da5bb42ecf2411765",
+      "sourceName": "contracts/test/TestERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/drafts/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestERC20"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/drafts/ERC20Permit.sol": {
+      "lastModificationDate": 1750147211724,
+      "contentHash": "d3da235724edc8bc7d00aedca06d3274",
+      "sourceName": "@openzeppelin/contracts/drafts/ERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../token/ERC20/ERC20.sol",
+        "./IERC20Permit.sol",
+        "../cryptography/ECDSA.sol",
+        "../utils/Counters.sol",
+        "./EIP712.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.5 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Permit"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1750147214219,
+      "contentHash": "52659a61e7fb46afdc3d0f00c3a87da6",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1750147211723,
+      "contentHash": "e20d6c1a44aff02acbfd4696f53087e5",
+      "sourceName": "@openzeppelin/contracts/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1750147211737,
+      "contentHash": "ebd32d219072a0232add3f1bb610731f",
+      "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Counters"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/drafts/EIP712.sol": {
+      "lastModificationDate": 1750147211723,
+      "contentHash": "978da83ab8d1ff945e5d117d3ab7daab",
+      "sourceName": "@openzeppelin/contracts/drafts/EIP712.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1750147211736,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1750147211724,
+      "contentHash": "871a094d6b6b4c3714946e86329f2fa2",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/TestERC20Metadata.sol": {
+      "lastModificationDate": 1750146793172,
+      "contentHash": "7fb24b0c0d377f5747b24816831536be",
+      "sourceName": "contracts/test/TestERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/drafts/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestERC20Metadata"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/TestCallee.sol": {
+      "lastModificationDate": 1750147576725,
+      "contentHash": "657b6f5aee34f0a3f13e099a4ac1cfb5",
+      "sourceName": "contracts/test/TestCallee.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/callback/ISwapCallback.sol",
+        "@surge/surge-core/contracts/libraries/SafeCast.sol",
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestCallee"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/TickLensTest.sol": {
+      "lastModificationDate": 1750147576732,
+      "contentHash": "b96436c2bc0ba5faefd361688946ddf3",
+      "sourceName": "contracts/test/TickLensTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "../lens/TickLens.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "TickLensTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/lens/TickLens.sol": {
+      "lastModificationDate": 1750147576732,
+      "contentHash": "990c9d7512c60aea758ab402d7cc4507",
+      "sourceName": "contracts/lens/TickLens.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "../interfaces/ITickLens.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "TickLens"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/ITickLens.sol": {
+      "lastModificationDate": 1750146793160,
+      "contentHash": "97137ce21fbdc704992b215f1b7cbe4f",
+      "sourceName": "contracts/interfaces/ITickLens.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "ITickLens"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/PoolTicksCounterTest.sol": {
+      "lastModificationDate": 1750147576725,
+      "contentHash": "bda87eb34aa2247b0a6adf183915a5e0",
+      "sourceName": "contracts/test/PoolTicksCounterTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "../libraries/PoolTicksCounter.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "PoolTicksCounterTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/PoolTicksCounter.sol": {
+      "lastModificationDate": 1750147576747,
+      "contentHash": "b4401eb7f71d9f14fdff77ee70cadb75",
+      "sourceName": "contracts/libraries/PoolTicksCounter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "PoolTicksCounter"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/lens/QuoterV2.sol": {
+      "lastModificationDate": 1750147576735,
+      "contentHash": "03704596f324b06533da950e9ce7bbb2",
+      "sourceName": "contracts/lens/QuoterV2.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/libraries/SafeCast.sol",
+        "@surge/surge-core/contracts/libraries/TickMath.sol",
+        "@surge/surge-core/contracts/libraries/TickBitmap.sol",
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "@surge/surge-core/contracts/interfaces/callback/ISwapCallback.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "../interfaces/IQuoterV2.sol",
+        "../base/PeripheryImmutableState.sol",
+        "../libraries/Path.sol",
+        "../libraries/PoolAddress.sol",
+        "../libraries/CallbackValidation.sol",
+        "../libraries/PoolTicksCounter.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "QuoterV2"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/TickBitmap.sol": {
+      "lastModificationDate": 1750147214152,
+      "contentHash": "a37b6629ee910c5581d86fce2d412c02",
+      "sourceName": "@surge/surge-core/contracts/libraries/TickBitmap.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BitMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "TickBitmap"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IQuoterV2.sol": {
+      "lastModificationDate": 1750146793159,
+      "contentHash": "d05ab58d7d5c927c5eb205eb7179d13a",
+      "sourceName": "contracts/interfaces/IQuoterV2.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IQuoterV2"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/BitMath.sol": {
+      "lastModificationDate": 1750147214145,
+      "contentHash": "81e58372a134f05eb1a211a1efef8a1e",
+      "sourceName": "@surge/surge-core/contracts/libraries/BitMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "BitMath"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/TestCallbackValidation.sol": {
+      "lastModificationDate": 1750146793172,
+      "contentHash": "6776540973ebe8bf92d794908508756c",
+      "sourceName": "contracts/test/TestCallbackValidation.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/CallbackValidation.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestCallbackValidation"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/lens/Quoter.sol": {
+      "lastModificationDate": 1750147576728,
+      "contentHash": "eceefcf51176abdb16c52709e8cc4952",
+      "sourceName": "contracts/lens/Quoter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/libraries/SafeCast.sol",
+        "@surge/surge-core/contracts/libraries/TickMath.sol",
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "@surge/surge-core/contracts/interfaces/callback/ISwapCallback.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "../interfaces/IQuoter.sol",
+        "../base/PeripheryImmutableState.sol",
+        "../libraries/Path.sol",
+        "../libraries/PoolAddress.sol",
+        "../libraries/CallbackValidation.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "Quoter"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IQuoter.sol": {
+      "lastModificationDate": 1750146793159,
+      "contentHash": "fe8b4279fc6b913c2b33c72db1ed3eb1",
+      "sourceName": "contracts/interfaces/IQuoter.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IQuoter"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/PoolAddressTest.sol": {
+      "lastModificationDate": 1750146793171,
+      "contentHash": "e2ce34e997ddc1aea326c6ca58fd082e",
+      "sourceName": "contracts/test/PoolAddressTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/PoolAddress.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PoolAddressTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/TokenRatioSortOrder.sol": {
+      "lastModificationDate": 1750146793167,
+      "contentHash": "d7a9468bf522b06f6a793480f501b8d2",
+      "sourceName": "contracts/libraries/TokenRatioSortOrder.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TokenRatioSortOrder"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/HexStrings.sol": {
+      "lastModificationDate": 1750146793164,
+      "contentHash": "562fe2d74458647ed8ec7bbbeece63a0",
+      "sourceName": "contracts/libraries/HexStrings.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "HexStrings"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/NFTSVG.sol": {
+      "lastModificationDate": 1750147576776,
+      "contentHash": "ba0380dac4a080b84a6f9e0a035b4f73",
+      "sourceName": "contracts/libraries/NFTSVG.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "@surge/surge-core/contracts/libraries/BitMath.sol",
+        "base64-sol/base64.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.6"
+      ],
+      "artifacts": [
+        "NFTSVG"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1750147211736,
+      "contentHash": "0a0b5402f31b9b60fdb741918c57247f",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/base64-sol/base64.sol": {
+      "lastModificationDate": 1750147210175,
+      "contentHash": "22c37b79b2b97ee9cee2e8a5f4b9cd78",
+      "sourceName": "base64-sol/base64.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [],
+      "artifacts": [
+        "Base64"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/Base64Test.sol": {
+      "lastModificationDate": 1750146793168,
+      "contentHash": "a385c7aa5afc4bd276ab45fd6a8a4dd6",
+      "sourceName": "contracts/test/Base64Test.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "base64-sol/base64.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "Base64Test"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/math/SignedSafeMath.sol": {
+      "lastModificationDate": 1750147211724,
+      "contentHash": "f90947ba3efcd88fec132a905c4c6b38",
+      "sourceName": "@openzeppelin/contracts/math/SignedSafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SignedSafeMath"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/FullMath.sol": {
+      "lastModificationDate": 1750147214145,
+      "contentHash": "c3f03759b6500f54f402f1963af1c256",
+      "sourceName": "@surge/surge-core/contracts/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0 <0.8.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/SqrtPriceMathPartial.sol": {
+      "lastModificationDate": 1750147576776,
+      "contentHash": "7f8a52908a2308e498c28911072f128c",
+      "sourceName": "contracts/libraries/SqrtPriceMathPartial.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/libraries/FullMath.sol",
+        "@surge/surge-core/contracts/libraries/UnsafeMath.sol",
+        "@surge/surge-core/contracts/libraries/FixedPoint96.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SqrtPriceMathPartial"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/UnsafeMath.sol": {
+      "lastModificationDate": 1750147214150,
+      "contentHash": "c2d88847ec7741938f1cecdfc808ee3b",
+      "sourceName": "@surge/surge-core/contracts/libraries/UnsafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "UnsafeMath"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/FixedPoint96.sol": {
+      "lastModificationDate": 1750147214145,
+      "contentHash": "f3ab03d6bbfd7c6834ecd3fc311cb0e7",
+      "sourceName": "@surge/surge-core/contracts/libraries/FixedPoint96.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint96"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/LiquidityAmounts.sol": {
+      "lastModificationDate": 1750147576776,
+      "contentHash": "6676afab2b7c9d45935033362c696501",
+      "sourceName": "contracts/libraries/LiquidityAmounts.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/libraries/FullMath.sol",
+        "@surge/surge-core/contracts/libraries/FixedPoint96.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "LiquidityAmounts"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/LiquidityAmountsTest.sol": {
+      "lastModificationDate": 1750146793169,
+      "contentHash": "d0cb8d63159b8c755001e7094b772567",
+      "sourceName": "contracts/test/LiquidityAmountsTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/LiquidityAmounts.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "LiquidityAmountsTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/PositionValue.sol": {
+      "lastModificationDate": 1750147576776,
+      "contentHash": "57e09f9700f4043dfb39c483cc7b7fdc",
+      "sourceName": "contracts/libraries/PositionValue.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "@surge/surge-core/contracts/libraries/FixedPoint128.sol",
+        "@surge/surge-core/contracts/libraries/TickMath.sol",
+        "@surge/surge-core/contracts/libraries/Tick.sol",
+        "../interfaces/INonfungiblePositionManager.sol",
+        "./LiquidityAmounts.sol",
+        "./PoolAddress.sol",
+        "./PositionKey.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.8 <0.8.0"
+      ],
+      "artifacts": [
+        "PositionValue"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/FixedPoint128.sol": {
+      "lastModificationDate": 1750147214145,
+      "contentHash": "1298041826d8bf2a444d660fc3b6aebd",
+      "sourceName": "@surge/surge-core/contracts/libraries/FixedPoint128.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint128"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/Tick.sol": {
+      "lastModificationDate": 1750147214147,
+      "contentHash": "676260aa31ccdb40c282db65bc4f96d2",
+      "sourceName": "@surge/surge-core/contracts/libraries/Tick.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./LowGasSafeMath.sol",
+        "./SafeCast.sol",
+        "./TickMath.sol",
+        "./LiquidityMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Tick"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/PositionKey.sol": {
+      "lastModificationDate": 1750146793166,
+      "contentHash": "75d1e33f18d1694897fcca697b305049",
+      "sourceName": "contracts/libraries/PositionKey.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PositionKey"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/LiquidityMath.sol": {
+      "lastModificationDate": 1750147214147,
+      "contentHash": "b0a53c2998a11247a3d091e573acdff0",
+      "sourceName": "@surge/surge-core/contracts/libraries/LiquidityMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "LiquidityMath"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/PositionValueTest.sol": {
+      "lastModificationDate": 1750146793171,
+      "contentHash": "0e5c565688880e14e37f7f1f04cd96c6",
+      "sourceName": "contracts/test/PositionValueTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/PositionValue.sol",
+        "../interfaces/INonfungiblePositionManager.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PositionValueTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/NonfungiblePositionManagerPositionsGasTest.sol": {
+      "lastModificationDate": 1750146793170,
+      "contentHash": "1d942fd8fa7fa97cb01d56cf5e670ca2",
+      "sourceName": "contracts/test/NonfungiblePositionManagerPositionsGasTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/INonfungiblePositionManager.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "NonfungiblePositionManagerPositionsGasTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/INonfungibleTokenPositionDescriptor.sol": {
+      "lastModificationDate": 1750146793157,
+      "contentHash": "65b2c99d12e9b554a0c402a3880c09e8",
+      "sourceName": "contracts/interfaces/INonfungibleTokenPositionDescriptor.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./INonfungiblePositionManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "INonfungibleTokenPositionDescriptor"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/PeripheryImmutableStateTest.sol": {
+      "lastModificationDate": 1750146793170,
+      "contentHash": "bd748fac7b8256237f6b3fc2ef8da3c7",
+      "sourceName": "contracts/test/PeripheryImmutableStateTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../base/PeripheryImmutableState.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PeripheryImmutableStateTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/examples/PairFlash.sol": {
+      "lastModificationDate": 1750147576725,
+      "contentHash": "28fa03d503729291465e90a82611ed12",
+      "sourceName": "contracts/examples/PairFlash.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/callback/IFlashCallback.sol",
+        "@surge/surge-core/contracts/libraries/LowGasSafeMath.sol",
+        "../base/PeripheryPayments.sol",
+        "../base/PeripheryImmutableState.sol",
+        "../libraries/PoolAddress.sol",
+        "../libraries/CallbackValidation.sol",
+        "../libraries/TransferHelper.sol",
+        "../interfaces/ISwapRouter.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PairFlash"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/callback/IFlashCallback.sol": {
+      "lastModificationDate": 1750147215476,
+      "contentHash": "fad183d71d36a3cc308d1b72a31298f2",
+      "sourceName": "@surge/surge-core/contracts/interfaces/callback/IFlashCallback.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IFlashCallback"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/LiquidityManagement.sol": {
+      "lastModificationDate": 1750147576735,
+      "contentHash": "f269ef166413fda8e5ca11970f643ed7",
+      "sourceName": "contracts/base/LiquidityManagement.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IFactory.sol",
+        "@surge/surge-core/contracts/interfaces/callback/IMintCallback.sol",
+        "@surge/surge-core/contracts/libraries/TickMath.sol",
+        "../libraries/PoolAddress.sol",
+        "../libraries/CallbackValidation.sol",
+        "../libraries/LiquidityAmounts.sol",
+        "./PeripheryPayments.sol",
+        "./PeripheryImmutableState.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "LiquidityManagement"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/interfaces/callback/IMintCallback.sol": {
+      "lastModificationDate": 1750147215476,
+      "contentHash": "91300bd511dea793779c0ec3dcbb50e9",
+      "sourceName": "@surge/surge-core/contracts/interfaces/callback/IMintCallback.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IMintCallback"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/OracleLibrary.sol": {
+      "lastModificationDate": 1750147576735,
+      "contentHash": "6c1b1b085cf7464fb5abfb8557b7a6d3",
+      "sourceName": "contracts/libraries/OracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/libraries/FullMath.sol",
+        "@surge/surge-core/contracts/libraries/TickMath.sol",
+        "@surge/surge-core/contracts/interfaces/IPool.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "OracleLibrary"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/OracleTest.sol": {
+      "lastModificationDate": 1750146793170,
+      "contentHash": "c3f66529d1ff344b2b700f769922af61",
+      "sourceName": "contracts/test/OracleTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/OracleLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "OracleTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/introspection/ERC165Upgradeable.sol": {
+      "lastModificationDate": 1750147211676,
+      "contentHash": "9d321316c7b79c97771b4494132c5a83",
+      "sourceName": "@openzeppelin/contracts-upgradeable/introspection/ERC165Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165Upgradeable.sol",
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC165Upgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/base/ERC721Permit.sol": {
+      "lastModificationDate": 1750146793152,
+      "contentHash": "b05fcaaaea442347b21d0a9f8bb8b658",
+      "sourceName": "contracts/base/ERC721Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol",
+        "@openzeppelin/contracts/utils/Address.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "../libraries/ChainId.sol",
+        "../interfaces/external/IERC1271.sol",
+        "../interfaces/IERC721Permit.sol",
+        "./BlockTimestamp.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "ERC721Permit"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol": {
+      "lastModificationDate": 1750147214168,
+      "contentHash": "8578643c1447b5899f302dc47ddfa0f8",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/ERC721Upgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/ContextUpgradeable.sol",
+        "./IERC721Upgradeable.sol",
+        "./IERC721MetadataUpgradeable.sol",
+        "./IERC721EnumerableUpgradeable.sol",
+        "./IERC721ReceiverUpgradeable.sol",
+        "../../introspection/ERC165Upgradeable.sol",
+        "../../math/SafeMathUpgradeable.sol",
+        "../../utils/AddressUpgradeable.sol",
+        "../../utils/EnumerableSetUpgradeable.sol",
+        "../../utils/EnumerableMapUpgradeable.sol",
+        "../../utils/StringsUpgradeable.sol",
+        "../../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ERC721Upgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1750147211736,
+      "contentHash": "fc7c67d7b17cde979a685143a26b2bc8",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/ChainId.sol": {
+      "lastModificationDate": 1750146793164,
+      "contentHash": "99798e248a42a68a14fb09975b97b07e",
+      "sourceName": "contracts/libraries/ChainId.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "ChainId"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/external/IERC1271.sol": {
+      "lastModificationDate": 1750146793160,
+      "contentHash": "577ba89decfbc12cb4850de84ff1e5cd",
+      "sourceName": "contracts/interfaces/external/IERC1271.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC1271"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+      "lastModificationDate": 1750147211691,
+      "contentHash": "9f901c17a18eadc08042b6a510da3b7d",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../proxy/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ContextUpgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol": {
+      "lastModificationDate": 1750147214166,
+      "contentHash": "da8bfaa954d8fd01c8aa29e48ee371fa",
+      "sourceName": "@openzeppelin/contracts-upgradeable/token/ERC721/IERC721ReceiverUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC721ReceiverUpgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol": {
+      "lastModificationDate": 1750147211700,
+      "contentHash": "8e2887267592735cd13e6a4661d91d70",
+      "sourceName": "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "SafeMathUpgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol": {
+      "lastModificationDate": 1750147211691,
+      "contentHash": "af59708dc3469e9aa4e5122ad448f447",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/EnumerableSetUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableSetUpgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/utils/EnumerableMapUpgradeable.sol": {
+      "lastModificationDate": 1750147211723,
+      "contentHash": "358fd43eab36eef2e3228fdb61187531",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/EnumerableMapUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "EnumerableMapUpgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol": {
+      "lastModificationDate": 1750147211692,
+      "contentHash": "5ed0e496ac007f6b079a253c033ab9fa",
+      "sourceName": "@openzeppelin/contracts-upgradeable/utils/StringsUpgradeable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "StringsUpgradeable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/TestPositionNFTOwner.sol": {
+      "lastModificationDate": 1750146793173,
+      "contentHash": "3dbdb23db4782d11e0975643f2ab19c6",
+      "sourceName": "contracts/test/TestPositionNFTOwner.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/external/IERC1271.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestPositionNFTOwner"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/proxy/UpgradeableProxy.sol": {
+      "lastModificationDate": 1750147211736,
+      "contentHash": "dad09357825895af818c7c2b98920524",
+      "sourceName": "@openzeppelin/contracts/proxy/UpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "UpgradeableProxy"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/proxy/Proxy.sol": {
+      "lastModificationDate": 1750147211735,
+      "contentHash": "c124c88aa1d0782c213e70473610b7dc",
+      "sourceName": "@openzeppelin/contracts/proxy/Proxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/proxy/TransparentUpgradeableProxy.sol": {
+      "lastModificationDate": 1750147211735,
+      "contentHash": "60d1c965370a0d4147587df77eb69358",
+      "sourceName": "@openzeppelin/contracts/proxy/TransparentUpgradeableProxy.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./UpgradeableProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "TransparentUpgradeableProxy"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/proxy/ProxyAdmin.sol": {
+      "lastModificationDate": 1750147211735,
+      "contentHash": "3488bf37a56bc43e015095b65acef15c",
+      "sourceName": "@openzeppelin/contracts/proxy/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../access/Ownable.sol",
+        "./TransparentUpgradeableProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "ProxyAdmin"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1750147211724,
+      "contentHash": "4f17c0de1f7da8f37ab37794d3ca89d4",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/ProxyAdmin.sol": {
+      "lastModificationDate": 1750146793171,
+      "contentHash": "6d5837c4cb6e47f9340d1b497b8dea5a",
+      "sourceName": "contracts/test/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/proxy/ProxyAdmin.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": []
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/TestMulticall.sol": {
+      "lastModificationDate": 1750146793173,
+      "contentHash": "591c2819a2612e2379a799403a7bfb1f",
+      "sourceName": "contracts/test/TestMulticall.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../base/Multicall.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "TestMulticall"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/interfaces/IERC20Metadata.sol": {
+      "lastModificationDate": 1750146793156,
+      "contentHash": "1c0aac2bcbcf1eee4da3507cde92a115",
+      "sourceName": "contracts/interfaces/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/SafeERC20Namer.sol": {
+      "lastModificationDate": 1750146793167,
+      "contentHash": "e88d350e70a51fdbff5b85086cc9df01",
+      "sourceName": "contracts/libraries/SafeERC20Namer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AddressStringUtil.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "SafeERC20Namer"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/AddressStringUtil.sol": {
+      "lastModificationDate": 1750146793163,
+      "contentHash": "c30f4c1d0c1aa246cd94d43634d91589",
+      "sourceName": "contracts/libraries/AddressStringUtil.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "AddressStringUtil"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/PathTest.sol": {
+      "lastModificationDate": 1750146793170,
+      "contentHash": "f4b712efa783e21d1f7e5444f0c4cdcb",
+      "sourceName": "contracts/test/PathTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/Path.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "PathTest"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/lens/InterfaceMulticall.sol": {
+      "lastModificationDate": 1750146793161,
+      "contentHash": "7e17fa12986adde9fd92cc80dba5f755",
+      "sourceName": "contracts/lens/InterfaceMulticall.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "InterfaceMulticall"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/MockObservable.sol": {
+      "lastModificationDate": 1750146793169,
+      "contentHash": "eef84de96fe34838640f5d98842fc50e",
+      "sourceName": "contracts/test/MockObservable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MockObservable"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/MockObservations.sol": {
+      "lastModificationDate": 1750147576725,
+      "contentHash": "776f6ab1eb5ac80afd1846b0336516d5",
+      "sourceName": "contracts/test/MockObservations.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/libraries/Oracle.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MockObservations"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/node_modules/@surge/surge-core/contracts/libraries/Oracle.sol": {
+      "lastModificationDate": 1750147214152,
+      "contentHash": "40af979a56a3e0538188d37c9cd463d2",
+      "sourceName": "@surge/surge-core/contracts/libraries/Oracle.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Oracle"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/NonfungiblePositionManager.sol": {
+      "lastModificationDate": 1750147576724,
+      "contentHash": "aa9521b8051edfbe6813f7b5a8a51fcb",
+      "sourceName": "contracts/NonfungiblePositionManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "@surge/surge-core/contracts/libraries/FixedPoint128.sol",
+        "@surge/surge-core/contracts/libraries/FullMath.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "./interfaces/INonfungiblePositionManager.sol",
+        "./interfaces/INonfungibleTokenPositionDescriptor.sol",
+        "./libraries/PositionKey.sol",
+        "./libraries/PoolAddress.sol",
+        "./base/LiquidityManagement.sol",
+        "./base/PeripheryImmutableState.sol",
+        "./base/Multicall.sol",
+        "./base/ERC721Permit.sol",
+        "./base/PeripheryValidation.sol",
+        "./base/SelfPermit.sol",
+        "./base/PoolInitializer.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "NonfungiblePositionManager"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/MockTimeNonfungiblePositionManager.sol": {
+      "lastModificationDate": 1750146793169,
+      "contentHash": "50f5f23d848094e0cef70f489f576512",
+      "sourceName": "contracts/test/MockTimeNonfungiblePositionManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../NonfungiblePositionManager.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "MockTimeNonfungiblePositionManager"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/NonfungibleTokenPositionDescriptor.sol": {
+      "lastModificationDate": 1750147576724,
+      "contentHash": "69cb54737463ad6b2c926bf1062e55d4",
+      "sourceName": "contracts/NonfungibleTokenPositionDescriptor.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "./libraries/SafeERC20Namer.sol",
+        "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol",
+        "./libraries/ChainId.sol",
+        "./interfaces/INonfungiblePositionManager.sol",
+        "./interfaces/INonfungibleTokenPositionDescriptor.sol",
+        "./interfaces/IERC20Metadata.sol",
+        "./libraries/PoolAddress.sol",
+        "./libraries/NFTDescriptor.sol",
+        "./libraries/TokenRatioSortOrder.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "NonfungibleTokenPositionDescriptor"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/libraries/NFTDescriptor.sol": {
+      "lastModificationDate": 1750147576751,
+      "contentHash": "93c6cdb613a67bf4e83a5b10b2f5b3c0",
+      "sourceName": "contracts/libraries/NFTDescriptor.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@surge/surge-core/contracts/interfaces/IPool.sol",
+        "@surge/surge-core/contracts/libraries/TickMath.sol",
+        "@surge/surge-core/contracts/libraries/BitMath.sol",
+        "@surge/surge-core/contracts/libraries/FullMath.sol",
+        "@openzeppelin/contracts/utils/Strings.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/math/SignedSafeMath.sol",
+        "base64-sol/base64.sol",
+        "./HexStrings.sol",
+        "./NFTSVG.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.0"
+      ],
+      "artifacts": [
+        "NFTDescriptor"
+      ]
+    },
+    "/Users/mruthunjay/Desktop/surge/v3-periphery/contracts/test/NFTDescriptorTest.sol": {
+      "lastModificationDate": 1750146793170,
+      "contentHash": "9257c385fa7de87963e0af9195705d4b",
+      "sourceName": "contracts/test/NFTDescriptorTest.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "evmVersion": "istanbul",
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "none"
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/NFTDescriptor.sol",
+        "../libraries/NFTSVG.sol",
+        "../libraries/HexStrings.sol"
+      ],
+      "versionPragmas": [
+        "=0.7.6"
+      ],
+      "artifacts": [
+        "NFTDescriptorTest"
+      ]
+    }
+  }
+}
